@@ -1,0 +1,1675 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+
+/* overall */
+.overall{
+    min-height:100vh;
+    background-color: black;
+    color: white;
+    padding: 30px;
+
+}
+
+body{
+    overflow-x: hidden;
+}
+
+:root{
+    --size:40px;
+    --color:aqua
+
+}
+
+/* heading */
+header{
+    display: flex;
+    justify-content: space-between;
+    color: var(--color);
+    font-size: 18px;
+    padding: 10px;
+}
+
+header h1 span{
+    font-size: 50px;
+    
+}
+/* nav bars */
+nav{
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    
+}
+
+/* connect with bars */
+input:checked+nav{
+    background-color: darkblue;
+    left: 0px;
+    color: white;
+    font-size: 20px;
+    z-index: 1;
+}
+nav a{
+     display: inline-block;
+     color: aqua;
+     height: 50px;
+     padding: 10px ;
+     transition-duration: 1s;
+
+}
+
+nav a:hover{
+    background-color:rgb(56, 65, 68);
+    
+}
+
+/* hide it from other view */
+header label,input{
+    display: none;
+}
+
+/* role & image */
+main{
+    width:100%;
+    /* background-color: red; */
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+
+/* role */
+.role{
+    width:400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: yellow; */
+    animation: role 1s;
+    animation-timeline: view();
+    /* animation-range: 60% 90%; */
+    
+    
+}
+
+.role h1{
+    font-size: 40px;
+}
+
+.role span{
+    color:var(--color)
+}
+
+main p{
+    width:500px;
+    /* font-size: 13px; */
+    margin-top: 10px;
+    line-height: 20px;
+}
+
+/* circle1 */
+.c1{
+    width: 350px;
+    height: 350px;
+    background-color: rgb(24, 24, 24);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* circle2 */
+.c2{
+    width: 250px;
+    height: 250px;
+    background-color: rgb(67, 68, 68);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* circle3 */
+.c3{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(56, 56, 56);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic{
+    animation: images 1s;
+    /* animation-timeline: view(); */
+     /* animation-range: 60% 90%; */
+    
+    
+}
+.pic img {
+    width: 300px;
+    height: 360px;
+    margin-bottom: 75px;
+}
+/* sections */
+.sec1{
+    width:100%;
+    padding: 10px;
+    /* background-color: red; */
+}
+
+/* about heading */
+.sec1 h1{
+    text-align: center;
+    font-size: var(--size);
+    color: var(--color);
+}
+
+/* container of about */
+.abt{
+    width: 100%;
+    /* background-color: yellow; */
+    padding: 20px;
+    display: flex;
+    gap: 50px;
+    margin-top: 20px;
+    
+
+}
+
+/* img box */
+.box{
+    width:250px;
+    height: 250px;
+    background-color: aqua;
+    position: relative;
+}
+
+/* image */
+.box img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: -10px;
+    bottom: 10px;
+   
+}
+
+/* left border */
+.box::after{
+    content: "";
+    width:5px;
+    height: 92px;
+    background-color: aqua;
+    position: absolute;
+    left: -15px;
+    bottom: 173px;
+    
+}
+
+/* top border */
+.box::before{
+    content: "";
+    width:90px;
+    height: 5px;
+    background-color: aqua;
+    position: absolute;
+    left: -10px;
+    bottom: 260px;
+}
+
+/* about */
+.about{
+    width: 70%;
+    position: relative;
+    /* background-color: aquamarine; */
+}
+
+/* name */
+.about h2{
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    font-size: 80px;
+    position: relative;
+    opacity: 0.2;
+    
+}
+
+/* role name */
+.about h6{
+    position: absolute;
+    bottom: 205px;
+    left: 20px;
+    font-size: 15px;
+    
+}
+
+/* description */
+.about p{
+    line-height: 25px;
+    opacity: 0.7;
+}
+
+/* button */
+.about button{
+    padding: 8px 15px;
+    background-color: transparent;
+    color: white;
+    opacity: 0.5;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin-top: 20px;
+}
+
+/* icon */
+button i{
+    color: rgb(18, 123, 215);
+   
+}
+
+/* skill section */
+.sec2{
+    width: 100%;
+    min-height: 500px;
+    margin-top: 20px;
+    /* background-color: rgb(172, 108, 108); */
+    
+}
+
+/* leftside */
+.left-container{
+    width: 30%;
+    /* background-color: red; */
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    text-align: center;
+}
+
+.lefttop, .leftmid, .leftbottom {
+    animation: leftt 1s;
+    animation-timeline: view();
+    /* animation-range: 60% 90%; */
+}
+
+.righttop, .rightmid, .rightbottom{
+    animation: rightt 1s;
+    animation-timeline: view();
+    /* animation-range: 60% 90%; */
+}
+
+/* .leftmid{
+    animation: lefttmid 1s;
+    animation-timeline: view();
+    animation-range: 30% 70%;
+} */
+
+/* circle */
+.circle{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    /* background-color: blue; */
+    
+}
+
+.circle h4{
+    width: 35px;
+    height: 35px;
+    /* background-color: yellow; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid whitesmoke;
+    margin-top: 3px;
+    
+}
+
+/* lines  lefttop*/
+.lefttop::after {
+    content: "";
+    width: 2px;
+    height: 314px;
+    background-color: whitesmoke;
+    position: absolute;
+    transform: rotate(102deg);
+    left: 372px;
+    top: -22px;
+    
+}
+
+
+.lefttop::before {
+    content: "";
+    width: 2px;
+    height: 53px;
+    background-color: whitesmoke;
+    position: absolute;
+    transform: rotate(131deg);
+    left: 545px;
+    top: 158px;
+}
+
+
+/* lines leftmid*/
+.leftmid::after {
+    content: "";
+    width: 2px;
+    height: 60px;
+    background-color: whitesmoke;
+    position: absolute;
+    transform: rotate(62deg);
+    left: 528px;
+    top: 62px;
+}
+
+.leftmid::before {
+    content: "";
+    width: 2px;
+    height: 284px;
+    background-color: whitesmoke;
+    position: absolute;
+    transform: rotate(90deg);
+    left: 360px;
+    top: 100px;
+}
+
+/* leftbottom lines */
+.leftbottom::after {
+    content: "";
+    width: 2px;
+    height: 60px;
+    background-color: whitesmoke;
+    position: absolute;
+    transform: rotate(47deg);
+    left: 575px;
+   top: -100px;
+}
+
+.leftbottom::before {
+    content: "";
+    width: 2px;
+    height: 244px;
+    background-color: whitesmoke;
+    position: absolute;
+    transform: rotate(75deg);
+    left: 437px;
+    top: -141px;
+}
+.left-container p{
+    line-height: 20px;
+    font-size: 13px;
+    text-align: left;
+    margin: 5px 50px;
+}
+
+/* bottom */
+.leftbottom h4 {
+    position: absolute;
+    bottom: 45px;
+    left: 285px;
+}
+
+/* center */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    /* background-color: red; */
+}
+
+/* rightside */
+.right{
+    right: 30px;
+}
+
+/* righttop */
+.righttop::before {
+    content: "";
+    width: 2px;
+    height: 350px;
+    background-color: whitesmoke;
+    position: absolute;
+    transform: rotate(78deg);
+    left: 13px;
+    top: -40px;
+}
+
+.righttop::after {
+    content: "";
+    width: 2px;
+    height: 46px;
+    background-color: whitesmoke;
+    position: absolute;
+    transform: rotate(40deg);
+    left: -172px;
+    top: 165px;
+}
+
+/* rightmid */
+.rightmid::before {
+    content: "";
+    width: 2px;
+    height: 296px;
+    background-color: whitesmoke;
+    position: absolute;
+    transform: rotate(90deg);
+    left: 36px;
+    top: 171px;
+}
+
+.rightmid::after {
+    content: "";
+    width: 2px;
+    height: 49px;
+    background-color: whitesmoke;
+    position: absolute;
+    transform: rotate(124deg);
+    right: 535px;
+    top: 70px;
+}
+
+/* rightbottom */
+.rightbottom::before {
+    content: "";
+    width: 2px;
+    height: 290px;
+    background-color: whitesmoke;
+    position: absolute;
+    transform: rotate(102deg);
+    left: -57px;
+    top: 265px;
+}
+
+.rightbottom::after {
+    content: "";
+    width: 2px;
+    height: 49px;
+    background-color: whitesmoke;
+    position: absolute;
+    transform: rotate(139deg);
+    right: 618px;
+    top: -90px;
+}
+
+.rightbottom h4 {
+    position: absolute;
+    bottom: 45px;
+    right:  285px;
+}
+
+/* skill */
+.center h1{
+    font-size: 80px;
+    color: var(--color);
+}
+
+/* project section */
+.sec3{
+    min-height: 100vh;
+    /* background-color: red; */
+    padding: 30px;
+    margin-top: 20px;
+}
+
+
+.sec3 h1{
+    color: var(--color);
+    text-align: center;
+   
+}
+
+/* project1 */
+.project1{
+    display: flex;
+    gap: 150px;
+    margin:50px 0px 0px 50px;
+    /* background-color: pink; */
+    
+}
+
+
+/* boxx */
+.boxx{
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+/* front */
+.front {
+    width: 238px;
+    height: 275px;
+    position: absolute;
+    left: 31px;
+    top: 45px;
+    background-color: white;
+    animation: frontopen 1s;
+    animation-timeline: view();
+    /* animation-range: 20% 50%; */
+}
+
+.front h3{
+    position: absolute;
+    z-index: 0;
+    bottom: 31px;
+    color: black;
+    left: 12px;
+}
+.side {
+    width: 56px;
+    height: 240px;
+    background-color: purple;
+    position: absolute;
+    left: -25px;
+    top: 45px;
+    animation: sideopen 1s;
+    animation-timeline: view();
+    /* animation-range: 20% 50%; */
+}
+
+
+.side h3 {
+    position: absolute;
+    font-size: 10px;
+    left: -21px;
+    top: 167px;
+    transform: rotate(-90deg);
+    letter-spacing: 4px;
+    width: 89px;
+}
+
+/* top */
+.top {
+    width: 243px;
+    height: 36px;
+    position: absolute;
+    top: 9px;
+    left: 1px;
+    background-color: aqua;
+    animation: topopen 1s;
+    transform: skewX(55deg);
+    /* animation-timeline: view(); */
+    /* animation-range: 20% 50%; */
+}
+
+.pic1 img {
+    position: absolute;
+    top: 18px;
+    left: -25px;
+    width: 295px;
+    transform: skew(0deg, 3deg);
+    height: 167px;
+    z-index: 1;
+    animation: image 1s;
+}
+
+.content{
+
+   margin: 80px 100px;
+}
+/* button */
+.content button{
+    border: none;
+    background-color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+/* education section */
+.sec4{
+    min-height: 70vh;
+    /* background-color: green; */
+    padding: 30px;
+}
+
+.sec4 h1{
+    text-align: center;
+    color: var(--color);
+    
+}
+
+/* container */
+.marks{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+/* 10th */
+.first{
+    width: 400px;
+    height: 20px;
+    margin: 70px 100px;
+    /* background-color: bisque; */
+}
+
+.percent{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.sslc{
+    width: 400px;
+    height: 20px;
+    background-color:white;
+    border-radius: 50px;
+    margin-top: 10px;
+    
+}
+
+.sslc div{
+    width:85%;
+    height: 100%;
+    background-color: aqua;
+    border-radius: 50px;
+    animation: sslc 1s;
+    animation-timeline: view();
+    /* animation-range: 20% 50%; */
+}
+
+/* 12th */
+.hsc{
+    width: 400px;
+    height: 20px;
+    background-color:white;
+    border-radius: 50px;
+    margin-top: 10px;
+    
+    
+}
+
+.hsc div{
+    width:70%;
+    height: 100%;
+    background-color: aqua;
+    border-radius: 50px;
+    animation: hsc 1s;
+    animation-timeline: view();
+    /* animation-range: 20% 50%; */
+    
+}
+
+/* ug */
+.ug{
+    width: 400px;
+    height: 20px;
+    background-color:white;
+    border-radius: 50px;
+    margin-top: 10px;
+   
+}
+
+.ug div{
+    width:81%;
+    height: 100%;
+    background-color: aqua;
+    border-radius: 50px;
+    animation: ug 1s;
+    animation-timeline: view();
+    /* animation-range: 20% 50%; */
+}
+
+.move{
+     margin: auto;
+     margin-top: 30px;
+}
+
+/* footer */
+footer{
+    min-height: 70vh;
+    /* background-color: blue; */
+    padding: 20px;
+}
+
+footer h1{
+    margin-left: 90px;
+}
+
+footer span{
+    color: var(--color);
+}
+
+/* container of bottom */
+.bottom{
+    min-height: 300px;
+    /* background-color: brown; */
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+/* about */
+.aboutt{
+    width: 400px;
+    
+}
+
+/* icons */
+.icons{
+    font-size: 30px;
+    display: flex;
+    gap: 20px;
+    
+}
+
+/* navigation */
+.navigation{
+    margin-top: 40px;
+    line-height: 35px;
+    opacity: 0.7;
+}
+
+.navigation ul{
+    list-style-type: none;
+}
+
+.navigation h6{
+    margin-left: 30px;
+    color: var(--color);
+}
+
+.foot-mobile{
+    display: none;
+}
+
+
+
+/* front keyframes */
+@keyframes frontopen {
+    0%{
+        transform: translateX(0);
+    }
+
+    50%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(100px);
+        
+    }
+    
+}
+
+/* topopen keyframes */
+@keyframes topopen {
+    0%{
+         transform: skewX(55deg) translatey(0px);
+    }
+
+    50%{
+         transform: skewX(55deg) translatey(0px);
+    }
+
+    100%{
+         transform: skewX(55deg) translatey(-100px);
+    }
+}
+
+
+/* side keyframes */
+@keyframes sideopen {
+    0%{
+         transform:skew(0deg, 52deg) translateX(0px);
+    }
+
+    50%{
+         transform:skew(0deg, 52deg) translateX(0px);
+    }
+
+    100%{
+         transform:skew(0deg, 52deg) translateX(-100px);
+    }
+}
+
+
+/* role keyframes */
+@keyframes role {
+    0%{
+        transform: translateX(0);
+    }
+
+    50%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(-500px);
+    }
+}
+
+/* images keyframes */
+@keyframes images {
+    0%{
+        transform: translateX(0);
+    }
+
+    50%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(500px);
+        
+    }
+    
+}
+
+/* leftcontainer keyframes */
+@keyframes leftt {
+    0%{
+        transform: translateX(0);
+    }
+
+    50%{
+        transform: translateX(0);
+       
+    }
+
+    100%{
+        transform: translateX(-1500px);
+       
+    }
+}
+
+/* leftcontainer keyframes */
+@keyframes rightt {
+    0%{
+        transform: translateX(0);
+    }
+
+    50%{
+        transform: translateX(0);
+        
+    }
+
+    100%{
+        transform: translateX(1500px);
+        
+    }
+}
+
+/* hsc keyframes */
+@keyframes hsc {
+    0%{
+        width: 0%;
+        
+    }
+    25%{
+        width: 20%;
+    }
+    50%{
+        width: 40%;
+    }
+    75%{
+        width:65% ;
+    }
+    100%{
+        width: 70%;
+        
+    }
+}
+
+/* sslc keyframes */
+@keyframes sslc {
+    0%{
+        width: 0%;
+        
+    }
+    25%{
+        width: 20%;
+    }
+    50%{
+        width: 40%;
+    }
+    75%{
+        width:65% ;
+    }
+    100%{
+        width: 85%;
+        
+    }
+}
+
+/* ug keyframes */
+@keyframes ug {
+    0%{
+        width: 0%;
+        
+    }
+    25%{
+        width: 20%;
+    }
+    50%{
+        width: 40%;
+    }
+    75%{
+        width:65% ;
+    }
+    100%{
+        width: 81%;
+        
+    }
+}
+
+/* mobile view */
+@media only screen and (min-width:300px) and (max-width:767px){
+
+    nav{
+        position: fixed;
+        background-color: lightblue;
+        left:-100%;
+        height: 92vh;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding-top: 70px;
+        top:50px;
+        transition: 2s;
+    }
+    header label{
+        display: inline;
+        margin-top: 10px;
+    }
+
+    header{
+        position: relative;
+        z-index: 1;
+    }
+
+    main{
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+
+    .role {
+        width: 100%;
+    }
+
+    main p {
+        width: 100%;
+        margin: 30px 0px;
+    }
+
+    .c1 {
+        width: 250px;
+        height: 250px;
+    }
+
+    .c2 {
+        width: 200px;
+        height: 200px;
+    }
+
+        .pic img {
+        width: 215px;
+        height: 250px;
+        margin-bottom: 43px;
+    }
+
+    .abt {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .abt::after {
+        top: 751px;
+    }
+
+    .abt::before {
+        top: 751px;
+    }
+
+    .about h6 {
+        left: 25px;
+        top: 54px;
+        font-size: 14px;
+    }
+
+    .about p {
+        line-height: 20px;
+        width: 260px;
+        font-size: 12px;
+    }
+
+    .about button{
+        margin: 20px 55px;
+    }
+   
+    .about {
+        width: unset;
+    }
+
+    .lefttop::after{
+        content: unset;
+    }
+    .leftmid::after{
+        content: unset;
+    }
+    .leftbottom::after{
+        content: unset;
+    }
+
+   .lefttop::before {
+        width: 3px;
+        height: 80px;
+        left: 67px;
+        top: -10px;
+        transform: rotate(90deg);
+    }
+
+    .leftmid::before {
+        width: 3px;
+        height: 151px;
+        left: 103px;
+        top: -44px;
+    }
+
+    .leftbottom::before {
+        width: 3px;
+        height: 144px;
+        left: 98px;
+        top: -41px;
+        transform: rotate(90deg);
+    }
+
+    .righttop::after{
+        content: unset;
+    }
+    .rightmid::after{
+        content: unset;
+    }
+    .rightbottom::after{
+        content: unset;
+    }
+
+    .righttop::before {
+        transform: rotate(90deg);
+       left: 53px;
+        top: 4px;
+        height: 50px;
+        width: 3px;
+    }
+
+    .rightmid::before {
+        width: 3px;
+        height: 106px;
+        left: 81px;
+        top: -24px;
+    }
+
+    .rightbottom::before {
+        width: 3px;
+        height: 149px;
+        left: 103px;
+        top: -45px;
+        transform: rotate(90deg);
+    }
+
+    .sec2 {
+        margin-top: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .center h1 {
+        font-size: 30px;
+        position: absolute;
+        top: -33px;
+    }
+
+    .center{
+        min-height: unset;
+    }
+
+    .sec2{
+        position: relative;
+    }
+    .left-container {
+        position: unset;
+        width: 287px;
+        gap: 30px;
+        margin-top: 40px;
+    }
+
+    .left-container p {
+        margin-top: 5px 0px
+    }
+
+    .circle h4 {
+        position: absolute;
+        left: 0;
+        top: -104px;
+    
+    }
+
+    .lefttop h3{
+        margin-right: 142px;
+        
+    }
+
+    .leftmid h3{
+        margin-right: 78px;
+    }
+
+    .leftbottom h3{
+       margin-right: 87px;
+    }
+
+    .righttop h3{
+        margin-right: 169px;
+    }
+
+    .rightmid h3{
+        margin-right: 120px;
+    }
+
+    .rightbottom h3{
+        margin-right: 80px;
+    }
+
+
+    .role{
+        display: contents;
+    }
+
+    .role h1{
+        order: 1;
+        text-align: center;
+    }
+
+    .pic{
+        order: 2;
+        margin-top: 15px;
+    }
+
+    .role p{
+        order: 3;
+    }
+
+    .lefttop, .leftmid, .leftbottom, .righttop, .rightmid, .rightbottom{
+        position: relative 
+    }
+
+
+    /* .lefttop{
+        order: 1;
+    }
+
+    .righttop{
+        order: 2;
+    }
+
+    .leftmid{
+        order: 3;
+    }
+
+    .rightmid{
+        order: 4;
+    }
+
+    .leftbottom{
+        order: 5;
+    }
+
+    .rightbottom{
+        order: 6;
+    } */
+
+    .project1 {
+        display: flex;
+        gap: unset;
+        margin: unset;
+        /* background-color: pink; */
+    }
+
+    .sec3{
+        padding: unset;
+    }
+
+    .content{
+        margin: 333px 0px 14px;
+    }
+
+    .boxx {
+        left: 8px;
+    }
+
+    .pic img {
+        width: 296px;
+    }
+
+    .marks{
+        display: unset;
+    }
+
+    .first {
+        width: 100%;
+        margin: 50px 0px;
+    }
+    .sslc {
+        width: 100%;
+    }
+
+    .hsc {
+        width: 100%
+    }
+
+    .ug {
+        width: 100%;
+    }
+
+    .sec4{
+        padding: unset;
+    }
+
+    .foot{
+        display: none;
+    }
+
+    .overall{
+        padding: unset;
+    }
+
+    header{
+        padding: 20px;
+    }
+
+    main p {
+        margin: 30px 20px;
+    }
+
+    .project1 {
+        margin: 30px;
+    }
+
+    .sec4 {
+        margin: 15px;
+    }
+
+   /* mobile view */
+
+   .foot-mobile{
+        width: 100%;
+        /* height: 380px; */
+        background-color: blanchedalmond;
+        padding:  0;
+        clip-path: path("M 0 100 C 50 20, 130 0, 172 30 C 239 78, 244 104, 770 142 L 770 381 L 0 382 Z");        display: inline-block;
+        /* position: relative; */
+   }
+
+   .green {
+        width: 100%;
+        /* height: 380px; */
+        background-color: aqua;
+        clip-path: path("M 0 170 C 105 68, 130 20, 203 64 C 223 78, 244 104, 770 142 L 770 381 L 0 382 Z");        
+        /* display: inline-block; */
+        display: flex;
+        justify-content: center;
+   }
+
+   .foot-icon {
+        width: 320px;
+        height: 380px;
+        background-color: aqua;
+        color: black;
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        flex-direction: column;
+        gap: 13px;
+       
+        
+    }
+
+    .socialmedia div p:nth-child(2){
+        color: blue;
+    }
+
+    .foot-icon img{
+        width: 25px;
+        height: 25px;
+    }
+
+    .foot-icon p{
+        margin-bottom: 0;
+    }
+
+    .socialmedia{
+        display: flex;
+        gap: 20px;
+        margin-left: 50px;
+    }
+
+    .id{
+         margin-top: 100px;
+    }
+}
+
+
+/* tab view */
+@media only screen and (min-width:767px) and (max-width:1023px){
+
+    main{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 25px;
+    }
+
+    nav {
+        margin-top: 27px;
+    }
+
+    main p {
+        width: 450px;
+    }
+
+    .about {
+        width: 460px;
+    }
+
+    .abt {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about h6{
+       bottom: 299px;
+        left: 132px;
+    }
+
+    .role{
+        gap: 15px;
+
+    }
+    .about h2 {
+        text-align: center;
+    }
+
+    .about button {
+        margin: 20px 133px;
+    }
+
+    .box{
+        width: 430px;
+    }
+
+    .lefttop::after{
+        content: unset;
+    }
+    .leftmid::after{
+        content: unset;
+    }
+    .leftbottom::after{
+        content: unset;
+    }
+
+    .lefttop::before {
+        width: 3px;
+        height: 80px;
+        left: 69px;
+        top: -9px;
+        transform: rotate(90deg);
+    }
+
+    .leftmid::before {
+        width: 3px;
+        height: 151px;
+        left: 105px;
+        top: -45px;
+    }
+
+    .leftbottom::before {
+        width: 3px;
+        height: 144px;
+        left: 101px;
+        top: -41px;
+        transform: rotate(90deg);
+    }
+
+
+
+    .righttop::after{
+        content: unset;
+    }
+    .rightmid::after{
+        content: unset;
+    }
+    .rightbottom::after{
+        content: unset;
+    }
+
+    .righttop::before {
+        transform: rotate(90deg);
+        left: 54px;
+        top: 6px;
+        height: 50px;
+        width: 3px;
+    }
+
+    .rightmid::before {
+        width: 3px;
+        height: 106px;
+        left: 81px;
+        top: -21px;
+    }
+
+    .rightbottom::before {
+        width: 3px;
+        height: 149px;
+        left: 103px;
+        top: -43px;
+        transform: rotate(90deg);
+    }
+
+    .sec2 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    .center h1 {
+        font-size: 45px;
+        position: absolute;
+        top: -40px;
+        right: 350px;
+        top: -38px;
+    }
+
+    .center{
+        min-height: unset;
+        position: relative;
+    }
+
+    .sec2{
+        position: relative;
+    }
+    .left-container {
+        position: unset;
+        width: 287px;
+        gap: 30px;
+        margin: 40px;
+    }
+
+    .left-container p {
+        margin-top: 5px 0px
+    }
+
+    .circle h4 {
+        position: absolute;
+        left: 0;
+        top: -104px;
+    
+    }
+
+    .lefttop h3{
+        margin-right: 125px;
+    }
+
+    .leftmid h3{
+        margin-right: 50px;
+    }
+
+    .leftbottom h3{
+        margin-right: 60px;
+    }
+
+    .righttop h3{
+        margin-right: 156px;
+    }
+
+    .rightmid h3{
+        margin-right: 99px;
+    }
+
+    .rightbottom h3{
+        margin-right: 50px;
+    }
+
+    .lefttop, .leftmid, .leftbottom, .righttop, .rightmid, .rightbottom{
+        position: relative;
+    }
+
+    .content {
+        margin: 20px 0px 0px 112px;
+    }
+
+    .move{
+        margin: unset;
+        margin-left: 100px;
+    }
+
+    .marks{
+        display: unset;
+    }
+
+    .sec4{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box {
+        width: 40%;
+    }
+
+    .project1 {
+    display: flex;
+    gap: 50px;
+    margin: 50px 0px 0px 50px;
+    /* background-color: pink; */
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+
+        .content {
+        margin: unset;
+    }
+
+    footer h1 {
+    margin: 90px;
+}
+}
+
+
+/* lap view */
+@media only screen and (min-width:1024px) and (max-width:1500px){
+    .about h6 {
+        bottom: 207px;
+    }
+    .sec3 {
+        margin-top: 92px;
+    }
+
+    .content {
+        margin: 44px 100px;
+    }
+
+    .project1 {
+        gap: 195px;
+    }
+    .move {
+        margin-top: 70px;
+    }
+
+    .sec4{
+        padding: unset;
+    }
+    
+    .overall{
+        padding: 12px;
+    }
+    
+    .left-container {
+    width: 340px;
+    }
+
+    .circle {
+    width: 370px;
+    }
+
+    .rightmid::after{
+        right: 470px;
+    }
+
+    .rightbottom::after {
+        right: 553px;
+    }
+
+    .righttop::before {
+        height: 332px;
+        left: 5px;
+        top: -29px;
+    }
+
+    .rightbottom::before {
+        height: 256px;
+        left: -74px;
+        top: -148px;
+    }
+
+    .rightmid::before {
+        height: 280px;
+        left: 28px;
+        top: -32px;
+    }
+
+    .lefttop::after {
+        height: 334px;
+        left: 363px;
+        top: -34px;
+    }
+
+    .leftmid::before {
+        height: 300px;
+        left: 352px;
+        top: -44px;
+    }
+
+
+}
+
+
